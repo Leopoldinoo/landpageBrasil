@@ -10,7 +10,6 @@ export default function PlayerCard({ player, index, onClick }) {
       onClick={() => onClick(player)}
       className="group rounded-2xl overflow-hidden bg-card border border-border/30 hover:border-primary/40 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 cursor-pointer"
     >
-      {/* Image */}
       <div className="relative aspect-[3/4] overflow-hidden bg-muted">
         {player.image ? (
           <img
@@ -31,7 +30,6 @@ export default function PlayerCard({ player, index, onClick }) {
         </span>
       </div>
 
-      {/* Info */}
       <div className="p-4">
         <h3 className="font-display text-base text-foreground">
           {player.nome}

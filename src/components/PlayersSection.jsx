@@ -39,7 +39,6 @@ export default function PlayersSection() {
           </h2>
         </motion.div>
 
-        {/* Filter tabs */}
         <div className="flex flex-wrap justify-center gap-2 mb-12">
           {POSITIONS.map((pos) => (
             <button
@@ -56,7 +55,6 @@ export default function PlayersSection() {
           ))}
         </div>
 
-        {/* Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
           {filtered.map((player, i) => (
             <PlayerCard
